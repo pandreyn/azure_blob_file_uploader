@@ -38,4 +38,10 @@ optional arguments:
 }
 ```
 
-where `account_name` is the storage account name and `account_key` is access key of that storage account.
+Where `account_name` is the storage account name and `account_key` is access key of that storage account.
+If you do not want to use config file, you can set `account_name` and `account_key` through env variables: `ACCOUNT_NAME` and `ACCOUNT_KEY` respectively.
+For windows:
+```
+set ACCOUNT_NAME=xxx
+set ACCOUNT_KEY=zzz
+```
