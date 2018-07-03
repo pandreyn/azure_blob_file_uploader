@@ -36,7 +36,8 @@ optional arguments:
 ```
 {
     "account_name": "xxx",
-    "account_key": "zzz"
+    "account_key": "yyy"
+    "container_name": "zzz"
 }
 ```
 
@@ -46,5 +47,6 @@ If you do not want to use config file, you can set `account_name` and `account_k
 For windows:
 ```
 set ACCOUNT_NAME=xxx
-set ACCOUNT_KEY=zzz
+set ACCOUNT_KEY=yyy
+set CONTAINER_NAME=zzz
 ```
