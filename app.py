@@ -14,10 +14,12 @@ def save_by_timer(params):
         with open(params.config_file, 'r') as f:
             config = json.load(f)
     else:
-        config = {'account_name': os.environ['ACCOUNT_NAME'], 'account_key': 'ACCOUNT_KEY'}
+        config = {'account_name': os.environ['ACCOUNT_NAME'], 
+                    'account_key': os.environ['ACCOUNT_KEY'], 
+                    'container_name': os.environ['CONTAINER_NAME']}
 
-    if ('account_name' not in config) or ('account_key' not in config):
-        print('you should set ACCOUNT_NAME and ACCOUNT_KEY') 
+    if ('account_name' not in config) or ('account_key' not in config) or ('container_name' not in config):
+        print('you should set ACCOUNT_NAME and ACCOUNT_KEY and CONTAINER_NAME') 
         return
 
     for i in range(number_of_files):

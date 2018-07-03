@@ -10,7 +10,7 @@ def upload_file(file_name, config):
     try:
         # Create the BlockBlockService that is used to call the Blob service for the storage account
         block_blob_service = BlockBlobService(account_name = config['account_name'], account_key = config['account_key'])
-        container_name ='test-container'
+        container_name = config['container_name']
 
         temp = randint(1, 100)
         dt = datetime.datetime.now().isoformat()
