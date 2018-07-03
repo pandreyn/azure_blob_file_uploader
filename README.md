@@ -11,7 +11,7 @@ This tool generates json files with simple structure and uploads them to azure s
 python -m venv venv
 virtualenv venv
 ```
-5. activate virtual env (on Windowsrun `venv\Scripts\activate`)
+5. activate virtual env (on Windows run `venv\Scripts\activate`)
 6. run `pip install -r requirements.txt`
 
 ## Usage:

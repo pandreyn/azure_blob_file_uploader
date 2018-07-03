@@ -13,7 +13,7 @@ def upload_file(file_name, config):
         container_name ='test-container'
 
         temp = randint(1, 100)
-        dt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        dt = datetime.datetime.now().isoformat()
         ts = time.time()
         data = {"temperature": temp, "date": dt, "timestamp": ts}
         json_text = json.dumps(data)
