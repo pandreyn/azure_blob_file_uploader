@@ -3,7 +3,7 @@ import time
 import uuid
 import json
 
-import savetostorage
+from utils import savetostorage, generateFile
 
 def save_by_timer(params):
     u = uuid.uuid1()
@@ -24,7 +24,8 @@ def save_by_timer(params):
 
     for i in range(number_of_files):
         file_name = '{}_{}.json'.format(str(u), str(i + 1).zfill(3))
-        savetostorage.upload_file(file_name, config)
+        file_body = generateFile.generate_file()
+        savetostorage.upload_file(file_name, file_body, config)
         print("Uploaded file: {}, waiting for {} seconds...".format(file_name, interval_in_sec))
         time.sleep(interval_in_sec)
 

@@ -50,3 +50,6 @@ set ACCOUNT_NAME=xxx
 set ACCOUNT_KEY=yyy
 set CONTAINER_NAME=zzz
 ```
+
+## JSON data
+To change data that would be uploaded to the blob storage should change file `utils\generateFile.py`. It returns json as text.
