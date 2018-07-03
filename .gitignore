@@ -1,0 +1,10 @@
+.vscode
+/dist/
+*.pyc
+__pycache__/
+/postgres-dat/a
+/pshScripts/
+/venv/
+/postgres-data/
+/leetcode/
+config.json
