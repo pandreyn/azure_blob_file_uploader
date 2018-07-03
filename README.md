@@ -30,7 +30,7 @@ optional arguments:
                         (default = 1 min)
 ```
 
-2. config file is simple json file with two arguments:
+2. config file is a simple json file with two arguments:
 ```
 {
     "account_name": "xxx",
