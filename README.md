@@ -1,6 +1,6 @@
 # azure_blob_file_uploader
 
-This tool generates json files with simple structure and upload them to azure storage.
+This tool generates json files with simple structure and uploads them to azure storage.
 
 ## Installation:
 1. install python
@@ -42,6 +42,7 @@ optional arguments:
 
 Where `account_name` is the storage account name and `account_key` is access key of that storage account.
 If you do not want to use config file, you can set `account_name` and `account_key` through env variables: `ACCOUNT_NAME` and `ACCOUNT_KEY` respectively.
+
 For windows:
 ```
 set ACCOUNT_NAME=xxx
