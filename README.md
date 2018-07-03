@@ -1,5 +1,7 @@
 # azure_blob_file_uploader
 
+This tool generates json files with simple structure and upload them to azure storage.
+
 ## Installation:
 1. install python
 2. clone repo
