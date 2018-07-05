@@ -27,8 +27,7 @@ def generate_file_test():
 # }
 
 def generate_file():
-    devices = ["MyPythonDevice"]
-    devices.extend(list("Device{}".format(x + 1) for x in range(9)))
+    devices = ["MyPythonDevice"] + list("Device{}".format(x + 1) for x in range(9))
 
     temp = randint(1, 100)
     dt = datetime.datetime.utcnow().isoformat()
